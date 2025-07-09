@@ -1,0 +1,19 @@
+{
+  "name": "work-v1",
+  "version": "1.0.0",
+  "description": "Taze kalendar edilmeli isler",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ruslan Donmezow",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "lodash": "^4.17.21",
+    "mongodb": "^6.17.0",
+    "mongoose": "^8.16.1"
+  }
+}

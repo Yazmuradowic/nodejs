@@ -1,0 +1,27 @@
+<%- include('header'); -%>
+    <div class="box" id="heading">
+        <h1>
+            <%=gun%>
+        </h1>
+    </div>
+
+    <div class="box">
+        <%for (var i=0; i < tazeis.length; i++) { %>
+            <form class="item" action="/delete" method="post">
+                <div class="item">
+                    <input type="checkbox" onchange="this.form.submit()" name="saylanan" id="" value=<%=tazeis[i]._id%>>
+                    <p>
+                        <%= tazeis[i].name %>
+                    </p>
+                    <input type="hidden" name="listName" id="" value=<%=gun%>></input>
+                </div>
+            </form>
+            <% } %>
+
+                <form class="item" action="/" method="post">
+                    <input type="text" name="etmeli" id="" placeholder="Isin gornusi" autocomplete="off">
+                    <button type="submit" class="button" name="listbutton" value=<%=gun%>>+</button>
+                </form>
+    </div>
+
+    <%- include('footer'); -%>
